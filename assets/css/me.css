@@ -20,6 +20,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+  resize:both;
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,6 +40,21 @@ ol, ul {
 
 blockquote, q {
   quotes: none; }
+
+@media screen and (max-width: 600px) {
+.mobile-hide {
+    display: none !important;
+ }
+ .mobile-show {
+    display: block !important;
+ }
+}
+.mobile-hide {
+    display: block;
+ }
+ .mobile-show {
+    display: none;
+ }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -122,9 +138,9 @@ body.page-template-page-fullsingle-me {
   /* padding: 10vh 10vw; */
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow: auto;
   position: absolute;
-  z-index: 1000; 
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +155,7 @@ body.page-template-page-fullsingle-me {
 
   .me-content {
     padding: 10vh 10vw;
-    height: 70vh;
+    height: 80vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -266,7 +282,7 @@ body.page-template-page-fullsingle-me.me-video {
     -o-object-position: 50% 50%;
        object-position: 50% 50%;
     width: 100vh;
-    height: 100vw; 
+    height: 100vw;
     }
   body.page-template-page-fullsingle-me.me-video .video-wrap {
     position: absolute;
