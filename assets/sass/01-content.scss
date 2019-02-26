@@ -75,7 +75,7 @@ body.page-template-page-fullsingle-me {
 //-------------------------------------------------------------------------------
 
 .fs-me {
-	padding: 10vh 10vw;
+	padding: 5vh 5vw;
 	overflow:hidden;
 	position: absolute;
 	z-index: 1000;
@@ -217,31 +217,6 @@ body.page-template-page-fullsingle-me {
 
 }	
 
-//-------------------------------------------------------------------------------
-// Credit
-//-------------------------------------------------------------------------------
-
-//	To edit this credit you can remove the CCA 3.0 license for only $5 here: https://onepagelove.com/me 
-//	this really helps contribute towards us developing more templates and means the world to me!
-//	Cheers, Rob (@robhope)
-
-.credit {
-	margin-bottom: 0;
-	animation: fadein 8s;
-
-	p {
-		font-size: 12px; 
-		line-height: 14px;
-		font-weight: 400;
-		opacity: 0.4;
-
-		a { 
-			color: $color-text;
-		}
-
-	}
-
-}
 
 //-------------------------------------------------------------------------------
 // Videos 

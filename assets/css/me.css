@@ -109,9 +109,7 @@ body.page-template-page-fullsingle-me {
   line-height: 60px;
   letter-spacing: -0.5px;
   color: #999999;
-  background-image: url("../../images/background.jpg");
-  background-position: center center;
-  background-size: cover; }
+  }
   body.page-template-page-fullsingle-me p {
     margin-bottom: 28px;
     color: #999999; }
@@ -121,16 +119,27 @@ body.page-template-page-fullsingle-me {
         line-height: 40px; } }
 
 .fs-me {
-  padding: 10vh 10vw;
+  /* padding: 10vh 10vw; */
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
   position: absolute;
-  z-index: 1000; }
+  z-index: 1000; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
   @media (max-width: 500px) {
     .fs-me {
-      padding: 5vh 5vw;
       text-align: center; } }
-  .fs-me .me-content {
-    height: 80vh;
+
+  .me-content {
+    padding: 10vh 10vw;
+    height: 70vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -141,6 +150,7 @@ body.page-template-page-fullsingle-me {
     @media (max-width: 500px) {
       .fs-me .me-content {
         height: 90vh; } }
+
 
 .logo {
   -webkit-box-flex: 1;
@@ -240,17 +250,7 @@ body.page-template-page-fullsingle-me {
         fill: #FFFFFF;
         transition: 0.1s; }
 
-.credit {
-  margin-bottom: 0;
-  -webkit-animation: fadein 8s;
-          animation: fadein 8s; }
-  .credit p {
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 400;
-    opacity: 0.4; }
-    .credit p a {
-      color: #999999; }
+
 
 body.page-template-page-fullsingle-me.me-video {
   background-image: none; }
@@ -265,8 +265,9 @@ body.page-template-page-fullsingle-me.me-video {
        object-fit: cover;
     -o-object-position: 50% 50%;
        object-position: 50% 50%;
-    width: 100%;
-    height: 100%; }
+    width: 100vh;
+    height: 100vw; 
+    }
   body.page-template-page-fullsingle-me.me-video .video-wrap {
     position: absolute;
     top: 50%;
@@ -276,7 +277,7 @@ body.page-template-page-fullsingle-me.me-video {
   body.page-template-page-fullsingle-me.me-video .video-container {
     position: relative;
     overflow: hidden;
-    height: 56.25vw;
+    height: 100vw;
     width: 100vw; }
     @media (max-aspect-ratio: 16 / 9) {
       body.page-template-page-fullsingle-me.me-video .video-container {
